@@ -35,7 +35,7 @@ This project is pre-seeded with initial data and is set up to automatically seed
 
 Before you run the application for the first time, the following steps are required to execute the intended functionality of the application:
 
-- **Database Creation**: Prior to debugging the application, you will need to migrate the data using the command *Add-Migration* in your NuGetPackaage Manager console, following a *namming for your migration within a double quote eg. "my new migration"* in order to create the Database and seed all data.
+- **Database Creation**: Prior to debugging the application, you will need to migrate the data using the command *Add-Migration* in your NuGetPackaage Manager console, following a *namming for your migration within a double quote e.g. "my new migration"* in order to create the Database and seed all data.
 - **Applying Migrations**: After adding the migration, the database needs to be updated by using the command *Update-Database* in the NuGetPackaage Manager console so that all data is synced to the newly created DB. The database is pre-seeded with sample data for demonstration and testing purposes. This includes sample persons, interests, and links that are already populated.
 
 ### Important Notes
