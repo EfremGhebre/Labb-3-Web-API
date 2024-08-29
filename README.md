@@ -29,20 +29,14 @@
 
 ## Database Initialization
 
-This project is set up to automatically apply migrations and seed the database with initial data when the application runs. 
-
-### How It Works
-
-- **Automatic Migrations**: Upon starting the application, the database will automatically apply any pending migrations. This ensures that the database schema is always up-to-date with the latest version of the application.
-- **Seeded Data**: The database is pre-seeded with sample data for demonstration and testing purposes. This includes sample persons, interests, and links that are already populated in the database when the app starts.
+This project is pre-seeded with initial data and is set up to automatically seed the database with data after the following steps. 
 
 ### Running the Application
 
-When you run the application for the first time, the following steps are executed automatically:
+Before you run the application for the first time, the following steps are required to execute the intended functionality of the application:
 
-1. **Database Creation**: If a database does not already exist, it will be created.
-2. **Applying Migrations**: Any pending migrations will be applied to the database.
-3. **Seeding the Database**: The database will be populated with initial data.
+- **Database Creation**: Prior to debugging the application, you will need to migrate the data using the command *Add-Migration* in your NuGetPackaage Manager console, following a *namming for your migration within a double quote eg. "my new migration"* in order to create the Database and seed all data.
+- **Applying Migrations**: After adding the migration, the database needs to be updated by using the command *Update-Database* in the NuGetPackaage Manager console so that all data is synced to the newly created DB. The database is pre-seeded with sample data for demonstration and testing purposes. This includes sample persons, interests, and links that are already populated.
 
 ### Important Notes
 
